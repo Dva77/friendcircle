@@ -5,8 +5,12 @@ import 'lib-flexible/flexible';
 import App from './App.vue';
 import router from './router';
 
-Vue.config.productionTip = false;
+import axios from 'axios'
+Vue.prototype.$http = axios
+Vue.config.productionTip = false
+axios.defaults.baseURL='http://gkd.aztop.cn'
 Vue.use(Vant);
+
 
 new Vue({
   router,

@@ -5,6 +5,8 @@ import homepage from '../components/homepage.vue';
 import self from '../components/self.vue';
 import help from '../components/help.vue';
 import dingding from '../components/dingding.vue';
+import helpadd from '../components/helpadd.vue';
+import helpreply from '../components/helpreply.vue';
 
 Vue.use(VueRouter);
 
@@ -18,6 +20,8 @@ const routes = [
     redirect: '/homepage',
     children: [
       { path: '/help', component: help },
+      { path: '/helpadd', component: helpadd },
+      { path: '/helpreply', component: helpreply },
       { path: '/self', component: self },
       { path: '/homepage', component: homepage },
     ],
