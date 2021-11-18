@@ -2,8 +2,9 @@
   <div>
     <!-- 底部导航栏 -->
      <!-- v-model="active" -->
-     <router-view/>
-  <van-tabbar route>
+     <router-view></router-view>
+  <van-tabbar route fixed placeholder> 
+    
   <van-tabbar-item replace to="/homepage" icon="wap-home">首页</van-tabbar-item>
   <van-tabbar-item replace to="/help" icon="friends">求助</van-tabbar-item>
   <van-tabbar-item replace to="/self" icon="manager">个人</van-tabbar-item>
@@ -31,5 +32,6 @@ export default {
 .van-tabbar {
   height: 6% !important;
   background-color: #eee;
+
 }
 </style>
