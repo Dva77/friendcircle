@@ -4,11 +4,11 @@ import 'vant/lib/index.css';
 import 'lib-flexible/flexible';
 import App from './App.vue';
 import router from './router';
-import './assets/galbal.css';
+
 import axios from 'axios'
 Vue.prototype.$http = axios
-Vue.config.productionTip = false;
-axios.defaults.baseURL = 'http://gkd.aztop.cn'
+Vue.config.productionTip = false
+axios.defaults.baseURL='http://gkd.aztop.cn'
 Vue.use(Vant);
 
 
